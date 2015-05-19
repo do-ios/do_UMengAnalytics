@@ -7,11 +7,18 @@
 //
 
 #import "do_UMengAnalytics_App.h"
+#import "doServiceContainer.h"
+#import "doIModuleExtManage.h"
+#import "MobClick.h"
 
 @implementation do_UMengAnalytics_App
 @synthesize ThridPartyID;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString* appkey = [[doServiceContainer Instance].ModuleExtManage GetThirdAppKey:@"do_UMengAnalytics.plist" : @"IOSAppKey"];
+    NSString* channel = [[doServiceContainer Instance].ModuleExtManage GetThirdAppKey:@"do_UMengAnalytics.plist" : @"IOSChannel"];
+    [MobClick startWithAppkey:appkey reportPolicy:BATCH   channelId: channel];
+    [MobClick updateOnlineConfig];
     return YES;
 }
 - (void)applicationWillResignActive:(UIApplication *)application

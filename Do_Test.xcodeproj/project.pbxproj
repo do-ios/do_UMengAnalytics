@@ -16,6 +16,9 @@
 		A44BC6A11AEE008D001580AA /* doPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC69A1AEE008D001580AA /* doPage.m */; };
 		A44BC6A21AEE008D001580AA /* doScriptEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC69C1AEE008D001580AA /* doScriptEngine.m */; };
 		A44BC6A31AEE008D001580AA /* doService.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC69E1AEE008D001580AA /* doService.m */; };
+		CCEB2B891B09E5EF00949C58 /* do_UMengAnalytics.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = CCEB2AC41B09D26900949C58 /* do_UMengAnalytics.plist */; };
+		CCEB2BB31B0AC00500949C58 /* doModuleExtManage.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEB2BB21B0AC00500949C58 /* doModuleExtManage.m */; };
+		CCEB2BB41B0ACB9900949C58 /* do_UMengAnalytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCEB2AC41B09D26900949C58 /* do_UMengAnalytics.plist */; };
 		CCFAEA591B00322400AED8D5 /* libDoCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEA581B00322400AED8D5 /* libDoCore.a */; };
 		CCFAEA921B00B16A00AED8D5 /* doPageViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAEA911B00B16A00AED8D5 /* doPageViewFactory.m */; };
 		CCFAEA991B00ECD800AED8D5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEA981B00ECD800AED8D5 /* ImageIO.framework */; };
@@ -59,6 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				CCEB2B891B09E5EF00949C58 /* do_UMengAnalytics.plist in CopyFiles */,
 				CCFAEB1F1B0423CB00AED8D5 /* do_UMengAnalytics_App.h in CopyFiles */,
 				CCFAEB201B0423CB00AED8D5 /* do_UMengAnalytics_SM.h in CopyFiles */,
 			);
@@ -88,6 +92,9 @@
 		A44BC69D1AEE008D001580AA /* doService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doService.h; sourceTree = "<group>"; };
 		A44BC69E1AEE008D001580AA /* doService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doService.m; sourceTree = "<group>"; };
 		A44BC7B21AEE19CC001580AA /* libdoExtLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdoExtLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEB2AC41B09D26900949C58 /* do_UMengAnalytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = do_UMengAnalytics.plist; sourceTree = "<group>"; };
+		CCEB2BB11B0AC00500949C58 /* doModuleExtManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doModuleExtManage.h; sourceTree = "<group>"; };
+		CCEB2BB21B0AC00500949C58 /* doModuleExtManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doModuleExtManage.m; sourceTree = "<group>"; };
 		CCFAEA231B00322400AED8D5 /* doAssetLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doAssetLaunchImage.h; sourceTree = "<group>"; };
 		CCFAEA241B00322400AED8D5 /* doCallBackTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doCallBackTask.h; sourceTree = "<group>"; };
 		CCFAEA251B00322400AED8D5 /* doDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doDefines.h; sourceTree = "<group>"; };
@@ -269,6 +276,8 @@
 		A44BC6931AEE008D001580AA /* doFrame */ = {
 			isa = PBXGroup;
 			children = (
+				CCEB2BB11B0AC00500949C58 /* doModuleExtManage.h */,
+				CCEB2BB21B0AC00500949C58 /* doModuleExtManage.m */,
 				A44BC6941AEE008D001580AA /* doApp.h */,
 				A44BC6951AEE008D001580AA /* doApp.m */,
 				A44BC6961AEE008D001580AA /* doIEventCallBack.h */,
@@ -305,6 +314,7 @@
 				CCFAEB1C1B04113C00AED8D5 /* MobClick.h */,
 				CCFAEB1D1B04113C00AED8D5 /* MobClickSocialAnalytics.h */,
 				CCFAEB151B04106600AED8D5 /* do_UMengAnalytics_App.m */,
+				CCEB2AC41B09D26900949C58 /* do_UMengAnalytics.plist */,
 				CCFAEB161B04106600AED8D5 /* do_UMengAnalytics_ISM.h */,
 				CCFAEB171B04106600AED8D5 /* do_UMengAnalytics_SM.h */,
 				CCFAEB181B04106600AED8D5 /* do_UMengAnalytics_SM.m */,
@@ -480,6 +490,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEB2BB41B0ACB9900949C58 /* do_UMengAnalytics.plist in Resources */,
 				CCFAEAFF1B0321E300AED8D5 /* do_Test.json in Resources */,
 				A44BC67B1AEE005E001580AA /* Images.xcassets in Resources */,
 			);
@@ -497,6 +508,7 @@
 				A44BC6761AEE005E001580AA /* ViewController.m in Sources */,
 				A44BC6A01AEE008D001580AA /* doLogEngine.m in Sources */,
 				CCFAEAC81B0182C600AED8D5 /* doDataFs.m in Sources */,
+				CCEB2BB31B0AC00500949C58 /* doModuleExtManage.m in Sources */,
 				CCFAEA921B00B16A00AED8D5 /* doPageViewFactory.m in Sources */,
 				A44BC6A31AEE008D001580AA /* doService.m in Sources */,
 				A44BC6731AEE005E001580AA /* AppDelegate.m in Sources */,

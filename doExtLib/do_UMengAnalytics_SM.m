@@ -63,23 +63,7 @@
     [MobClick event: eventID attributes:data counter:counter];
 
 }
-- (void)init:(NSArray *)parms
-{
-    NSDictionary *_dictParas = [parms objectAtIndex:0];
-    NSString * appkey = [doJsonHelper GetOneText: _dictParas :@"appKey" :@""];
-    if(appkey.length<=0){
-        [NSException raise:@"umeng" format:@"友盟分享appkey无效!",nil];
-    }
-    NSString * reportPolicy = [doJsonHelper GetOneText: _dictParas :@"reportPolicy" :@"BATCH"];
-    NSString * channel = [doJsonHelper GetOneText: _dictParas :@"channel" :@""];
-    int policy = BATCH;
-    if(![reportPolicy isEqualToString:@"BATCH"])
-    {
-        policy = SEND_INTERVAL;
-    }
-    [MobClick startWithAppkey:appkey reportPolicy:policy   channelId: channel];
-    [MobClick updateOnlineConfig];
-}
+
 - (void)readConfig:(NSArray *)parms
 {
     NSDictionary *_dictParas = [parms objectAtIndex:0];

@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "do_UMengAnalytics_App.h"
+#import "doServiceContainer.h"
+#import "doModuleExtManage.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,7 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
-    
+    [doServiceContainer Instance].ModuleExtManage = [[doModuleExtManage alloc]init];
+    //测试SM的时候如果需要在这个方法里调用一些初始化，可以类似如下写法
+    do_UMengAnalytics_App * app = [[do_UMengAnalytics_App alloc]init];
+    [app application:application didFinishLaunchingWithOptions:launchOptions];
     ViewController *myC = [[ViewController alloc] init];
     [self.window setRootViewController:myC];
     [self.window makeKeyAndVisible];

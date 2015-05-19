@@ -33,11 +33,7 @@
     self = [super init];
     //如果是SM
     model = [[do_UMengAnalytics_SM alloc]init];
-    NSMutableDictionary* node = [[NSMutableDictionary alloc]init];
-    [node setObject:@"5553dabe67e58ec1df00467a" forKey:@"appKey"];
-    [node setObject:@"SEND_INTERVAL" forKey:@"reportPolicy"];
-    [node setObject:@"channel1" forKey:@"channel"];
-    [[doService Instance] SyncMethod:model :@"init" :node];
+    
     return self;
 }
 - (void)viewDidLoad {

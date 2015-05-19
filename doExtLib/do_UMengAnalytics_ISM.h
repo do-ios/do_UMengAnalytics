@@ -16,7 +16,6 @@
 - (void)endPageLog:(NSArray *)parms;
 - (void)eventLog:(NSArray *)parms;
 - (void)eventValueLog:(NSArray *)parms;
-- (void)init:(NSArray *)parms;
 - (void)readConfig:(NSArray *)parms;
 - (void)setBackgroundTask:(NSArray *)parms;
 - (void)setCrashReportEnabled:(NSArray *)parms;
