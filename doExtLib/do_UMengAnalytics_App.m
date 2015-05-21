@@ -10,9 +10,16 @@
 #import "doServiceContainer.h"
 #import "doIModuleExtManage.h"
 #import "MobClick.h"
-
+static do_UMengAnalytics_App* instance;
 @implementation do_UMengAnalytics_App
-@synthesize ThridPartyID;
+@synthesize OpenURLScheme;
++(id) Instance
+{
+    if(instance==nil)
+        instance = [[do_UMengAnalytics_App alloc]init];
+    return instance;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSString* appkey = [[doServiceContainer Instance].ModuleExtManage GetThirdAppKey:@"do_UMengAnalytics.plist" : @"IOSAppKey"];
@@ -20,33 +27,5 @@
     [MobClick startWithAppkey:appkey reportPolicy:BATCH   channelId: channel];
     [MobClick updateOnlineConfig];
     return YES;
-}
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    
-}
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    
-}
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    
-}
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    
-}
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    
-}
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation fromThridParty:(NSString*)_id
-{
-    return NO;
-}
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url fromThridParty:(NSString*)_id
-{
-    return NO;
 }
 @end
