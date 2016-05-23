@@ -9,7 +9,9 @@
 #import "do_UMengAnalytics_App.h"
 #import "doServiceContainer.h"
 #import "doIModuleExtManage.h"
-#import "MobClick.h"
+#import <UMMobClick/MobClick.h>
+
+
 static do_UMengAnalytics_App* instance;
 @implementation do_UMengAnalytics_App
 @synthesize OpenURLScheme;
@@ -24,8 +26,12 @@ static do_UMengAnalytics_App* instance;
 {
     NSString* appkey = [[doServiceContainer Instance].ModuleExtManage GetThirdAppKey:@"do_UMengAnalytics.plist" : @"IOSAppKey"];
     NSString* channel = [[doServiceContainer Instance].ModuleExtManage GetThirdAppKey:@"do_UMengAnalytics.plist" : @"IOSChannel"];
-    [MobClick startWithAppkey:appkey reportPolicy:BATCH   channelId: channel];
-    [MobClick updateOnlineConfig];
+    UMAnalyticsConfig *config = [UMAnalyticsConfig sharedInstance];
+    
+    config.appKey = appkey;
+    config.channelId = channel;
+    config.ePolicy = BATCH;
+    [MobClick startWithConfigure:config];
     return YES;
 }
 @end

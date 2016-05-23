@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0082FF1CF28FD300D4EC2B /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0082FE1CF28FD300D4EC2B /* UMMobClick.framework */; };
 		A44BC6701AEE005E001580AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC66F1AEE005E001580AA /* main.m */; };
 		A44BC6731AEE005E001580AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC6721AEE005E001580AA /* AppDelegate.m */; };
 		A44BC6761AEE005E001580AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC6751AEE005E001580AA /* ViewController.m */; };
@@ -47,12 +48,10 @@
 		CCFAEAFF1B0321E300AED8D5 /* do_Test.json in Resources */ = {isa = PBXBuildFile; fileRef = CCFAEAF31B02F8DD00AED8D5 /* do_Test.json */; };
 		CCFAEB191B04106600AED8D5 /* do_UMengAnalytics_App.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAEB151B04106600AED8D5 /* do_UMengAnalytics_App.m */; };
 		CCFAEB1A1B04106600AED8D5 /* do_UMengAnalytics_SM.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAEB181B04106600AED8D5 /* do_UMengAnalytics_SM.m */; };
-		CCFAEB1E1B04113C00AED8D5 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEB1B1B04113C00AED8D5 /* libMobClickLibrary.a */; };
 		CCFAEB1F1B0423CB00AED8D5 /* do_UMengAnalytics_App.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CCFAEB141B04106600AED8D5 /* do_UMengAnalytics_App.h */; };
 		CCFAEB201B0423CB00AED8D5 /* do_UMengAnalytics_SM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CCFAEB171B04106600AED8D5 /* do_UMengAnalytics_SM.h */; };
 		CCFAEB211B04241A00AED8D5 /* do_UMengAnalytics_App.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAEB151B04106600AED8D5 /* do_UMengAnalytics_App.m */; };
 		CCFAEB221B04241A00AED8D5 /* do_UMengAnalytics_SM.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAEB181B04106600AED8D5 /* do_UMengAnalytics_SM.m */; };
-		CCFAEB231B04242100AED8D5 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEB1B1B04113C00AED8D5 /* libMobClickLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B0082FE1CF28FD300D4EC2B /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		A44BC66A1AEE005E001580AA /* Do_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Do_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44BC66E1AEE005E001580AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44BC66F1AEE005E001580AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		A44BC69C1AEE008D001580AA /* doScriptEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doScriptEngine.m; sourceTree = "<group>"; };
 		A44BC69D1AEE008D001580AA /* doService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doService.h; sourceTree = "<group>"; };
 		A44BC69E1AEE008D001580AA /* doService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doService.m; sourceTree = "<group>"; };
-		A44BC7B21AEE19CC001580AA /* libdoExtLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdoExtLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44BC7B21AEE19CC001580AA /* libumengAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libumengAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEB2AC41B09D26900949C58 /* do_UMengAnalytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = do_UMengAnalytics.plist; sourceTree = "<group>"; };
 		CCEB2BB11B0AC00500949C58 /* doModuleExtManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doModuleExtManage.h; sourceTree = "<group>"; };
 		CCEB2BB21B0AC00500949C58 /* doModuleExtManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doModuleExtManage.m; sourceTree = "<group>"; };
@@ -181,9 +181,6 @@
 		CCFAEB161B04106600AED8D5 /* do_UMengAnalytics_ISM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_UMengAnalytics_ISM.h; sourceTree = "<group>"; };
 		CCFAEB171B04106600AED8D5 /* do_UMengAnalytics_SM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_UMengAnalytics_SM.h; sourceTree = "<group>"; };
 		CCFAEB181B04106600AED8D5 /* do_UMengAnalytics_SM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = do_UMengAnalytics_SM.m; sourceTree = "<group>"; };
-		CCFAEB1B1B04113C00AED8D5 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		CCFAEB1C1B04113C00AED8D5 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
-		CCFAEB1D1B04113C00AED8D5 /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +210,6 @@
 				CCFAEA9D1B00ED1C00AED8D5 /* CoreGraphics.framework in Frameworks */,
 				CCFAEA9B1B00ECF400AED8D5 /* Security.framework in Frameworks */,
 				CCFAEA991B00ECD800AED8D5 /* ImageIO.framework in Frameworks */,
-				CCFAEB231B04242100AED8D5 /* libMobClickLibrary.a in Frameworks */,
 				CCFAEA591B00322400AED8D5 /* libDoCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,13 +218,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCFAEB1E1B04113C00AED8D5 /* libMobClickLibrary.a in Frameworks */,
+				3B0082FF1CF28FD300D4EC2B /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0082FD1CF28FD300D4EC2B /* UMengSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3B0082FE1CF28FD300D4EC2B /* UMMobClick.framework */,
+			);
+			path = UMengSDK;
+			sourceTree = "<group>";
+		};
 		A44BC6611AEE005E001580AA = {
 			isa = PBXGroup;
 			children = (
@@ -243,7 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				A44BC66A1AEE005E001580AA /* Do_Test.app */,
-				A44BC7B21AEE19CC001580AA /* libdoExtLib.a */,
+				A44BC7B21AEE19CC001580AA /* libumengAnalytics.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,10 +313,8 @@
 		A44BC7B31AEE19CD001580AA /* doExtLib */ = {
 			isa = PBXGroup;
 			children = (
+				3B0082FD1CF28FD300D4EC2B /* UMengSDK */,
 				CCFAEB141B04106600AED8D5 /* do_UMengAnalytics_App.h */,
-				CCFAEB1B1B04113C00AED8D5 /* libMobClickLibrary.a */,
-				CCFAEB1C1B04113C00AED8D5 /* MobClick.h */,
-				CCFAEB1D1B04113C00AED8D5 /* MobClickSocialAnalytics.h */,
 				CCFAEB151B04106600AED8D5 /* do_UMengAnalytics_App.m */,
 				CCEB2AC41B09D26900949C58 /* do_UMengAnalytics.plist */,
 				CCFAEB161B04106600AED8D5 /* do_UMengAnalytics_ISM.h */,
@@ -446,7 +448,7 @@
 			);
 			name = doExtLib;
 			productName = doExtLib;
-			productReference = A44BC7B21AEE19CC001580AA /* libdoExtLib.a */;
+			productReference = A44BC7B21AEE19CC001580AA /* libumengAnalytics.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -661,6 +663,10 @@
 		A44BC7C31AEE19CD001580AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/doExtLib/UMengSDK",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -672,7 +678,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = umengAnalytics;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
 			};
@@ -681,13 +687,17 @@
 		A44BC7C41AEE19CD001580AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/doExtLib/UMengSDK",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/doExtLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = umengAnalytics;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
 			};

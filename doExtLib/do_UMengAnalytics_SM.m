@@ -11,7 +11,7 @@
 #import "doScriptEngineHelper.h"
 #import "doIScriptEngine.h"
 #import "doInvokeResult.h"
-#import "MobClick.h"
+#import <UMMobClick/MobClick.h>
 #import "doJsonHelper.h"
 
 @implementation do_UMengAnalytics_SM
@@ -64,17 +64,17 @@
 
 }
 
-- (void)readConfig:(NSArray *)parms
-{
-    NSDictionary *_dictParas = [parms objectAtIndex:0];
-    NSString * configID = [doJsonHelper GetOneText: _dictParas :@"configID" :@""];
-    if(configID.length<=0)
-    {
-        return;
-    }
-    doInvokeResult* _result =[parms objectAtIndex:2];
-    [_result SetResultText:[MobClick getConfigParams:configID]];
-}
+//- (void)readConfig:(NSArray *)parms
+//{
+//    NSDictionary *_dictParas = [parms objectAtIndex:0];
+//    NSString * configID = [doJsonHelper GetOneText: _dictParas :@"configID" :@""];
+//    if(configID.length<=0)
+//    {
+//        return;
+//    }
+//    doInvokeResult* _result =[parms objectAtIndex:2];
+//    [_result SetResultText:[MobClick getConfigParams:configID]];
+//}
 - (void)setBackgroundTask:(NSArray *)parms
 {
     NSDictionary *_dictParas = [parms objectAtIndex:0];
