@@ -64,8 +64,9 @@
 
 }
 
-//- (void)readConfig:(NSArray *)parms
-//{
+//新版sdk不支持
+- (void)readConfig:(NSArray *)parms
+{
 //    NSDictionary *_dictParas = [parms objectAtIndex:0];
 //    NSString * configID = [doJsonHelper GetOneText: _dictParas :@"configID" :@""];
 //    if(configID.length<=0)
@@ -74,12 +75,13 @@
 //    }
 //    doInvokeResult* _result =[parms objectAtIndex:2];
 //    [_result SetResultText:[MobClick getConfigParams:configID]];
-//}
+}
+//新版sdk不支持
 - (void)setBackgroundTask:(NSArray *)parms
 {
-    NSDictionary *_dictParas = [parms objectAtIndex:0];
-    BOOL isBackground = [doJsonHelper GetOneBoolean: _dictParas :@"value" : NO];
-    [MobClick setBackgroundTaskEnabled:isBackground];
+//    NSDictionary *_dictParas = [parms objectAtIndex:0];
+//    BOOL isBackground = [doJsonHelper GetOneBoolean: _dictParas :@"value" : NO];
+//    [MobClick setBackgroundTaskEnabled:isBackground];
 }
 - (void)setCrashReportEnabled:(NSArray *)parms
 {
