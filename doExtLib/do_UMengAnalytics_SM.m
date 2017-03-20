@@ -11,7 +11,8 @@
 #import "doScriptEngineHelper.h"
 #import "doIScriptEngine.h"
 #import "doInvokeResult.h"
-#import <UMMobClick/MobClick.h>
+//#import <UMMobClick/MobClick.h>
+#import "MobClick.h"
 #import "doJsonHelper.h"
 
 @implementation do_UMengAnalytics_SM

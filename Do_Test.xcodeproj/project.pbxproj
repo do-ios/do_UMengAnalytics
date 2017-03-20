@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B0082FF1CF28FD300D4EC2B /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0082FE1CF28FD300D4EC2B /* UMMobClick.framework */; };
-		3B4A6A0B1E7A3EB500785706 /* UMMobClick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B0082FE1CF28FD300D4EC2B /* UMMobClick.framework */; };
+		3B6945B81E7A795E009CF0BE /* UMMobClick.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6945B71E7A795E009CF0BE /* UMMobClick.a */; };
 		A44BC6701AEE005E001580AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC66F1AEE005E001580AA /* main.m */; };
 		A44BC6731AEE005E001580AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC6721AEE005E001580AA /* AppDelegate.m */; };
 		A44BC6761AEE005E001580AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BC6751AEE005E001580AA /* ViewController.m */; };
@@ -62,7 +61,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				3B4A6A0B1E7A3EB500785706 /* UMMobClick.framework in CopyFiles */,
 				CCEB2B891B09E5EF00949C58 /* do_UMengAnalytics.plist in CopyFiles */,
 				CCFAEB1F1B0423CB00AED8D5 /* do_UMengAnalytics_App.h in CopyFiles */,
 				CCFAEB201B0423CB00AED8D5 /* do_UMengAnalytics_SM.h in CopyFiles */,
@@ -72,7 +70,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3B0082FE1CF28FD300D4EC2B /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		3B6945B41E7A7956009CF0BE /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		3B6945B51E7A7956009CF0BE /* MobClickGameAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickGameAnalytics.h; sourceTree = "<group>"; };
+		3B6945B61E7A7956009CF0BE /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
+		3B6945B71E7A795E009CF0BE /* UMMobClick.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = UMMobClick.a; sourceTree = "<group>"; };
 		A44BC66A1AEE005E001580AA /* Do_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Do_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44BC66E1AEE005E001580AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44BC66F1AEE005E001580AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -220,7 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0082FF1CF28FD300D4EC2B /* UMMobClick.framework in Frameworks */,
+				3B6945B81E7A795E009CF0BE /* UMMobClick.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,9 +231,20 @@
 		3B0082FD1CF28FD300D4EC2B /* UMengSDK */ = {
 			isa = PBXGroup;
 			children = (
-				3B0082FE1CF28FD300D4EC2B /* UMMobClick.framework */,
+				3B6945B71E7A795E009CF0BE /* UMMobClick.a */,
+				3B6945B31E7A7956009CF0BE /* Headers */,
 			);
 			path = UMengSDK;
+			sourceTree = "<group>";
+		};
+		3B6945B31E7A7956009CF0BE /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3B6945B41E7A7956009CF0BE /* MobClick.h */,
+				3B6945B51E7A7956009CF0BE /* MobClickGameAnalytics.h */,
+				3B6945B61E7A7956009CF0BE /* MobClickSocialAnalytics.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		A44BC6611AEE005E001580AA = {
@@ -677,6 +689,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/doExtLib",
+					"$(PROJECT_DIR)/doExtLib/UMengSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -697,6 +710,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/doExtLib",
+					"$(PROJECT_DIR)/doExtLib/UMengSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = umengAnalytics;

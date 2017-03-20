@@ -9,7 +9,8 @@
 #import "do_UMengAnalytics_App.h"
 #import "doServiceContainer.h"
 #import "doIModuleExtManage.h"
-#import <UMMobClick/MobClick.h>
+//#import <UMMobClick/MobClick.h>
+#import "MobClick.h"
 
 
 static do_UMengAnalytics_App* instance;
